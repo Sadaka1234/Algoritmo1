@@ -8,14 +8,15 @@
 #include <dirent.h>
 #include <sys/stat.h>
 #include <unistd.h>
-#include "Lista.h"
 
 typedef struct Persona{
 	int id, fobia;
-	tLista comunidad;
 	}Persona;
 	
 	
-void CrearPersona(tLista* lista, int idd, int fobiaa);
-void AgregarNodo(char *line, tLista *lista);
+void CrearPersona(Persona * lista, int idd, int fobiaa, int lugar);
+void AgregarNodo(char *line, int ** arreglo, int n);
+void MayoresFobias(Persona * Personas, int ** arreglo, int * fobias, int n);
+void Sort(int ** arreglo, int k, int dimensiones);
+int MinofArray(int * array, int largo);
 #endif

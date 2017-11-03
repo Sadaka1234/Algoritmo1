@@ -1,4 +1,4 @@
 primer:
-	gcc -c main.c funciones.c Lista.c -Wall
-	gcc main.o funciones.o Lista.o -o ejecutar
-	./ejecutar
+	gcc -c main.c funciones.c -Wall
+	gcc main.o funciones.o -o ejecutar
+	./ejecutar < input-1.dat
